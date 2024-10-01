@@ -1,0 +1,182 @@
+/*Body styling*/
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/*nav styling*/
+nav{
+    background-color: #6cb2b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/*ul styling*/
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*li styling*/
+nav ul li{
+    margin: 0 20px;
+}
+
+/*anchor tag styling*/
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/*hover styling*/
+nav ul li a:hover{
+    background-color: crimson;
+    color: #4E342E;
+}
+
+/*div styling*/
+.hero-image{
+    background-image: url("https://cdn.pixabay.com/photo/2024/03/02/06/58/ai-generated-8607702_640.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+
+}
+
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*p tag styling*/
+p{
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 20px;
+    line-height: 1.6;
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #6cb2b4;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    .hero-text{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+
+/*Contact page styling*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/*Card styling*/
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*heading styling*/
+.card-title{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-text{
+    margin-bottom: 12px;
+
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    border-radius: 4px;
+    text-decoration: pointer;
+}
+
+.btn i{
+    margin-right: 5px;
+}
+
+/*form styling*/
+.form{
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-group{
+    margin-bottom: 14px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea{
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"]{
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
